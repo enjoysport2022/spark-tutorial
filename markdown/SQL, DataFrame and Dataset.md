@@ -2,15 +2,11 @@
 
 - [原文链接](http://spark.apache.org/docs/latest/sql-getting-started.html)
 
-- [git地址]()
-
-- 思维导图 图片/文件 上传到线上)
+- [git地址](https://github.com/poteman/learnSpark)
 
 - xmind思维导图
 
-- ![SQL, DataFrames and Datasets](/Users/didi/Desktop/技能学习/spark官网文档学习/SQL, DataFrames and Datasets.png)
-
-- GetStart.scala
+- ![xmind思维导图](https://ws1.sinaimg.cn/large/006tNc79ly1g04o1osv2sj310w0u00xf.jpg)
 
 - SparkSession
 
