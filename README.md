@@ -10,7 +10,7 @@
 
 第3部分: []()
 
-微信公众号:
+微信公众号:![](https://ws2.sinaimg.cn/large/006tKfTcly1g069dxx59jj3076076aaj.jpg)
 
 作者联系方式: 946691288@qq.com
 
