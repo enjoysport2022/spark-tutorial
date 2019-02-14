@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="514fa94f-cb47-4da9-bb2c-7dd9b74bb803" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala" afterDir="false" />
+    <list default="true" id="514fa94f-cb47-4da9-bb2c-7dd9b74bb803" name="Default" comment="简书modify">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="RDDsAccumulatorsBroadcastVars.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="133">
+              <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -104,7 +104,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="720" />
     <option name="height" value="814" />
@@ -148,6 +148,11 @@
               <item name="learnSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="xmind" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,12 +295,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550140050110</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="简书上传">
+      <created>1550144173039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550144173039</updated>
+    </task>
+    <task id="LOCAL-00004" summary="简书modify">
+      <created>1550145382117</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550145382117</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="720" height="814" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -307,10 +325,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4125874" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27336124" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5509642" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19321534" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13447782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -331,7 +349,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="transform and action" />
     <MESSAGE value="共享变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="共享变量" />
+    <MESSAGE value="简书上传" />
+    <MESSAGE value="简书modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="简书modify" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
@@ -470,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="133">
+          <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
