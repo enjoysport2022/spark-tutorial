@@ -105,20 +105,6 @@ object RDDsAccumulatorsBroadcastVars {
       .sortByKey()
     println(scounts.collect().foreach(println))
 
-    //    函数
-    //    匿名函数
-    val preFileLength = distFile.map(x => "pre" + x)
-      .map(s => s.length)
-      .reduce((a, b) => a + b)
-    println(preFileLength)
-
-    //    单例对象中的静态方法
-    val funFileLength = distFile.map(MyFunctions.fun1)
-      .map(s => s.length)
-      .reduce((a, b) => a + b)
-    println(funFileLength)
-
-
 //    action（执行）
 
 //    reduce(func):通过函数func先聚集各分区的数据集，再聚集分区之间的数据，
@@ -172,7 +158,25 @@ object RDDsAccumulatorsBroadcastVars {
     lookupRDD.foreach(x => print(x + " "))
     println()
 
-//    saveAsTextFile(path): 将结果保存到指定的HDFS目录中
+//    rdd.saveAsTextFile(path): 将结果保存到指定的HDFS目录中
+
+//    persist（持久化）
+//    rdd.persist()
+//    rdd.cache()
+
+
+//   函数
+    //    匿名函数
+    val preFileLength = distFile.map(x => "pre" + x)
+      .map(s => s.length)
+      .reduce((a, b) => a + b)
+    println(preFileLength)
+
+    //    单例对象中的静态方法
+    val funFileLength = distFile.map(MyFunctions.fun1)
+      .map(s => s.length)
+      .reduce((a, b) => a + b)
+    println(funFileLength)
 
 
 //    共享变量
