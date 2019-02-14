@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="514fa94f-cb47-4da9-bb2c-7dd9b74bb803" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/people.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/people.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/people.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="RDDsAccumulatorsBroadcastVars.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+            <state relative-caret-position="212">
+              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -32,7 +32,7 @@
       <file leaf-file-name="RDD.scala" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/rdd/RDD.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="27080">
               <caret line="1396" column="6" selection-start-line="1396" selection-start-column="6" selection-end-line="1396" selection-end-column="6" />
             </state>
           </provider>
@@ -50,8 +50,8 @@
       <file leaf-file-name="AggregateFunctions.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="53" column="36" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
+            <state relative-caret-position="1060">
+              <caret line="53" column="36" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -62,7 +62,7 @@
       <file leaf-file-name="AggregateFunctions2.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions2.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="160">
               <caret line="8" column="27" selection-end-line="60" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -106,10 +106,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="720" />
     <option name="y" value="23" />
     <option name="width" value="720" />
-    <option name="height" value="810" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -143,21 +142,6 @@
               <item name="learnSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learnSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learnSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="ml-latest-small" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learnSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learnSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,8 +154,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,10 +277,18 @@
       <option name="presentableId" value="Default" />
       <updated>1550028028500</updated>
     </task>
+    <task id="LOCAL-00001" summary="transform and action">
+      <created>1550128264297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550128264297</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="720" y="23" width="720" height="812" extended-state="0" />
+    <frame x="0" y="23" width="720" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -309,10 +301,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37202796" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42097902" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27412587" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23746313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19321534" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -330,7 +322,55 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="transform and action" />
+    <option name="LAST_COMMIT_MESSAGE" value="transform and action" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/rdd/RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27920">
+          <caret line="1396" column="6" selection-start-line="1396" selection-start-column="6" selection-end-line="1396" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/people.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="27" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SqlDataframeAndDataset.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -371,7 +411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="160">
           <caret line="8" column="27" selection-end-line="60" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -399,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/AggregateFunctions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="53" column="36" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
+        <state relative-caret-position="1060">
+          <caret line="53" column="36" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -416,15 +456,15 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/rdd/RDD.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="27080">
           <caret line="1396" column="6" selection-start-line="1396" selection-start-column="6" selection-end-line="1396" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/RDDsAccumulatorsBroadcastVars.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        <state relative-caret-position="212">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

@@ -175,6 +175,17 @@ object RDDsAccumulatorsBroadcastVars {
 //    saveAsTextFile(path): 将结果保存到指定的HDFS目录中
 
 
+//    共享变量
+//    Broadcast variables（广播变量）
+    val broadcastVar = sc.broadcast(Array(1, 2, 3))
+    broadcastVar.value.foreach(x => print(x + " "))
+    println()
+
+//    Accumulators（累加器）
+    val accum = sc.longAccumulator("my Accumulator")
+    sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum.add(x))
+    println(accum.value)
+
     /*
      */
 
