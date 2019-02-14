@@ -26,7 +26,16 @@
 
 - 创建RDD
   - parallelize
+  ```
+  val data = Array(1, 2, 3, 4, 5)
+  val distData = sc.parallelize(data)
+
+  val rdd = sc.parallelize(1 to 5)
+  ```
   - 外部文件(textFile)
+  ```
+  val distFile = sc.textFile("/Users/didi/learn/learnSpark/src/main/resources/people.txt")
+  ```
 
 - RDD操作
   - 打印
@@ -39,87 +48,152 @@
   - transformations（转换）：延迟计算
 
     - map
+
+      - map
+
+        ```
+        val rdd = sc.parallelize(1 to 5)
+        val map = rdd.map(x => x * 2)
+        ```
+
+      - flatMap: 每个元素输入项都可以被映射到0个或多个的输出项，最终将结果”扁平化“后输出
+
+        ```
+        val fm = sc.parallelize(1 to 5)
+              .flatMap(x => (1 to x))
+        ```
+
     - 采样: sample(withReplacement, fraction, seed)
+
+      ```
+      val sample1 = sc.parallelize(1 to 20)
+        .sample(false, 0.5, 1)
+      ```
+
     - RDD交并集
       - 并集: union(ortherDataset)
+
+        ```
+        val unionRDD = sc.parallelize(1 to 3)
+          .union(sc.parallelize(3 to 5))
+        ```
+
       - 交集: intersection(otherDataset)
+
+        ```
+        val inRDD = sc.parallelize(1 to 3)
+          .intersection(sc.parallelize(3 to 5))
+        ```
+
     - 去重: distinct
+
+      ```
+      val disRDD = sc.parallelize(List(1, 2, 2, 3)).distinct()
+      ```
+
     - 笛卡尔积操作: cartesian(otherDataset)
-    - Key-Value
+
+      ```
+      val cartRDD = sc.parallelize(1 to 2)
+        .cartesian(sc.parallelize(2 to 3))
+      ```
+
     - 筛选: filter
 
-  - actions（动作）触发计算
+      ```
+      val ft = sc.parallelize(1 to 5)
+        .filter(x => x >2)
+      ```
+
+    - Key-Value
+
+      - reduceByKey
+
+        ```
+        val counts = distFile.map(s => (s, 1))
+          .reduceByKey((a, b) => a + b)
+        ```
+
+      - sortByKey
+
+        ```
+        val scounts = distFile.map(s => (s, 1))
+          .reduceByKey((a, b) => a + b)
+          .sortByKey()
+        ```
+
+  - actions（执行）触发计算
 
     - reduce: 通过函数func先聚集各分区的数据集，再聚集分区之间的数据，func接收两个参数，返回一个值，值再做为参数继续传递给函数func，直到最后一个元素
 
-    - ```
+      ```
       val actionRDD = sc.parallelize(1 to 10, 2)
       val reduceRDD = actionRDD.reduce(_ + _)
       ```
 
     - collect: 以数据的形式返回数据集中的所有元素
 
-    - ```
+      ```
       actionRDD.collect().foreach(x => print(x + " "))
       ```
 
     - count: 返回数据集元素个数
 
-    - ```
+      ```
       val countRDD = actionRDD.count()
       ```
 
     - first: 返回数据集的第一个元素
 
-    - ```
+      ```
       val firstRDD = actionRDD.first()
       ```
 
     - take(n): 以数组的形式返回数据集上的前n个元素
 
-    - ```
+      ```
       val takeRDD = actionRDD.take(5)
       ```
 
     - top(n): 按默认或者指定的排序规则返回前n个元素，默认按降序输出
 
-    - ```
+      ```
       val topRDD = actionRDD.top(3)
       ```
 
     - takeOrdered(n,[ordering]): 按自然顺序或者指定的排序规则返回前n个元素
 
-    - ```
+      ```
       val takeOrderedRDD = actionRDD.takeOrdered(3)
       ```
 
     - Key-Value
 
-    - ```
+      ```
       val keyRDD = sc.parallelize(List(("a", 1), ("b", 2), ("a", 2), ("b", 3)))
       ```
 
       - countByKey: 统计每个key的个数
 
-      - ```
+        ```
         val countByKeyRDD = keyRDD.countByKey()
         ```
 
       - collectAsMap: 不包含重复的key
 
-      - ```
+        ```
         val collectAsMapRDD = keyRDD.collectAsMap()
         ```
 
       - lookup(k): 查找指定K的所有V值
 
-      - ```
+        ```
         val lookupRDD = keyRDD.lookup("a")
         ```
 
     - saveAsTextFile(path): 将结果保存到指定的HDFS目录中
 
-    - ```
+      ```
       rdd.saveAsTextFile(path)
       ```
 
@@ -127,13 +201,13 @@
 
     - persist()
 
-    - ```
+      ```
       rdd.persist()
       ```
 
     - cache()
 
-    - ```
+      ```
       rdd.cache()
       ```
 
@@ -141,7 +215,7 @@
 
     - 匿名函数
 
-    - ```
+      ```
       val preFileLength = distFile.map(x => "pre" + x)
         .map(s => s.length)
         .reduce((a, b) => a + b)
@@ -149,7 +223,7 @@
 
     - 单例对象中的静态方法
 
-    - ```
+      ```
       object MyFunctions {
           def fun1(s: String): String = {
             "pre" + s
@@ -171,13 +245,13 @@
 
   - Broadcast Vars(广播变量)
 
-  - ```
+    ```
     val broadcastVar = sc.broadcast(Array(1, 2, 3))
     ```
 
   - Accumulators(累加器)
 
-  - ```
+    ```
     val accum = sc.longAccumulator("my Accumulator")
     sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum.add(x))
     ```
