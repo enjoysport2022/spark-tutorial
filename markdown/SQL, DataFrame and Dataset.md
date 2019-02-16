@@ -198,11 +198,11 @@
     - toDF函数
 
     - ```
-      case class Person(name: String, age: Long)
+      case class part2.Person(name: String, age: Long)
       val peopleDF = spark.sparkContext
         .textFile("examples/src/main/resources/people.txt")
         .map(_.split(","))
-        .map(attributes => Person(attributes(0), attributes(1).trim.toInt))
+        .map(attributes => part2.Person(attributes(0), attributes(1).trim.toInt))
         .toDF()
       ```
 
@@ -225,16 +225,16 @@
     - Seq
 
     - ```
-      val caseClassDS = Seq(Person("Andy", 32)).toDS()
+      val caseClassDS = Seq(part2.Person("Andy", 32)).toDS()
       val primitiveDS = Seq(1, 2, 3).toDS()
       ```
 
     - Json
 
     - ```
-      case class Person(name: String, age: Long)
+      case class part2.Person(name: String, age: Long)
       val path = "examples/src/main/resources/people.json"
-      val peopleDS = spark.read.json(path).as[Person]
+      val peopleDS = spark.read.json(path).as[part2.Person]
       ```
 
   - DS操作

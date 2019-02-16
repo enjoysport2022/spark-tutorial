@@ -1,10 +1,10 @@
+package part2
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
 
-case class Person(name: String, age: Long)
-
-object GetStart {
+object SqlDataFrameAndDataset {
 
   def main(args: Array[String]): Unit = {
     //    starting point: SparkSession
@@ -66,8 +66,8 @@ object GetStart {
     teenagersDF.map(teenager => "Name: " + teenager(0)).show()
 
 //    通过schema创建DF
-    import org.apache.spark.sql.types._
     import org.apache.spark.sql.Row
+    import org.apache.spark.sql.types._
     val rowRDD = spark.sparkContext.textFile("/Users/didi/learn/learnSpark/src/main/resources/people.txt")
       .map(_.split(","))
       .map(attributes => Row(attributes(0), attributes(1).trim))

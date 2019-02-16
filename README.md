@@ -8,7 +8,9 @@
 
 第2部分: [SQL, DataFrame and Dataset](https://www.jianshu.com/p/d689014ac0a8)
 
-第3部分: [MLlib(Machine Learning):近期完成]()
+第3部分: [MLlib(Machine Learning)]():创作中
+
+第4部分: [项目实战]():敬请期待
 
 微信公众号:![](https://ws2.sinaimg.cn/large/006tKfTcly1g069dxx59jj3076076aaj.jpg)
 

@@ -1,6 +1,6 @@
+package part1
+
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 
 //    http://www.cnblogs.com/MOBIN/p/5414490.html#12

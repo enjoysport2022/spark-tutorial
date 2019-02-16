@@ -1,8 +1,9 @@
+package part2
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Row, SparkSession}
-
 
 object AggregateFunctions {
 

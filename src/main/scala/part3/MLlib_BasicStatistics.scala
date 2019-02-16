@@ -1,8 +1,9 @@
+package part3
+
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.ml.stat.{Correlation, ChiSquareTest, Summarizer}
 import org.apache.spark.ml.linalg.{Matrix, Vector, Vectors}
-import org.apache.spark.sql.Row
+import org.apache.spark.ml.stat.{ChiSquareTest, Correlation, Summarizer}
+import org.apache.spark.sql.{Row, SparkSession}
 
 object MLlib_BasicStatistics {
 
