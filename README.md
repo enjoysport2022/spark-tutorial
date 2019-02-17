@@ -4,11 +4,11 @@
 
 教程配套[简书地址](https://www.jianshu.com/nb/34127975)
 
-第1部分: [RDDs, Accumulators, BroadcastVars](https://www.jianshu.com/p/2dfb935ffbd7)
+第1部分: [RDDs, Accumulators, BroadcastVars](https://github.com/poteman/spark-tutorial/tree/master/src/main/scala/part1)
 
-第2部分: [SQL, DataFrame and Dataset](https://www.jianshu.com/p/d689014ac0a8)
+第2部分: [SQL, DataFrame and Dataset](https://github.com/poteman/spark-tutorial/tree/master/src/main/scala/part2)
 
-第3部分: [MLlib(Machine Learning)]():创作中
+第3部分: [MLlib(Machine Learning)](https://github.com/poteman/spark-tutorial/tree/master/src/main/scala/part3):创作中
 
 第4部分: [项目实战]():敬请期待
 
